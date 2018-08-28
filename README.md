@@ -1,6 +1,6 @@
 # Laravel installer script in Python
 ## Usage
-Simply run the python script main.py using a Python 3.6+ interpreter.
+Simply run the python script main.py using a Python interpreter.
 Follow instructions of the CLI.
 
 This will clone most recent repo of Laradock (http://laradock.io/) and the Composer Laravel installer and install both.
