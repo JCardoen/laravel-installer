@@ -7,4 +7,4 @@ This will clone most recent repo of Laradock (http://laradock.io/) and the Compo
 This changes the files .ENV for both Laravel as well as Laradock
 
 ## Contributing to this project
-Contributing to this project is encouraged! Edit it to your own liking or request futures for the script.
+Contributing to this project is encouraged! Edit it to your own liking or request features for the script.
