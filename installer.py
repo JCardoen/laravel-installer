@@ -3,7 +3,6 @@ import os
 class Installer:
     projectName = ''
     databaseName = ''
-    useLaradock = False
 
     def __init__(self):
         self.projectName = raw_input('Name of project: ')
@@ -13,15 +12,6 @@ class Installer:
         os.system('composer global require "laravel/installer"')
         self.laravel_new()
         self.init_laradock()
-        self.start_laradock()
-
-    def start_laradock(self):
-        print('Starting laradock...')
-        try:
-            os.system('cd {}/laradock/ && docker-compose -d up nginx workspace mysql'.format(self.projectLocation))
-            print('Laradock started')
-        except Exception as ex:
-            print('ERROR while trying to start Laradock: {}'.format(ex.message))
 
     def laravel_new(self):
         os.system('composer create-project --prefer-dist laravel/laravel {}/{}'.format(self.projectLocation, self.projectName))
